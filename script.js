@@ -7,9 +7,8 @@ const SHEET_ID = "1i0dWthUd7ZKNKHjFc2I96g5L7AWbalLmzB92Wuo-Unk";
 // name (as shown on the tab at the bottom of Google Sheets, case-sensitive)
 // or its 1-based position (1, 2, 3…) if you'd rather not rename tabs.
 const SECTIONS = [
-  { title: "Watch Later", tab: "1" },
-  // { title: "Finance", tab: "Finance" },
-  // { title: "Comedy", tab: "3" },
+  { title: "Thrive", tab: "Thrive" },
+  { title: "Groww", tab: "Groww" },
 ];
 
 // Free YouTube Data API key — needed for view counts. Get one at
