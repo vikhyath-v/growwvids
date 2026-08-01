@@ -1,17 +1,38 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="top">
-<h1>Library</h1>
-<input id="search" placeholder="Search...">
+  <div class="brand">
+    <p class="eyebrow">Est. this shelf</p>
+    <h1>Library</h1>
+  </div>
+
+  <div class="search-wrap">
+    <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true">
+      <circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="13" y1="13" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <label for="search" class="visually-hidden">Search the shelf</label>
+    <input id="search" type="text" placeholder="Search titles or channels" autocomplete="off">
+    <span id="count" class="count" aria-live="polite"></span>
+  </div>
 </header>
-<main id="grid" class="grid"></main>
+
+<main>
+  <p id="status" class="status" role="status" hidden></p>
+  <div id="grid" class="grid" aria-live="polite"></div>
+</main>
+
 <script src="script.js"></script>
 </body>
 </html>
